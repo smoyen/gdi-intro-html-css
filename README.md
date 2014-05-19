@@ -2,7 +2,7 @@
 This is a repo to host a live presentation of my revised slides for the *Intro to HTML & CSS* course I teach for GDI Boston.
 
 ###Demo
-View demo of presentation via this [link]('http://codelala.github.io/gdi-intro-html-css').
+View demo of presentation via this <a href='http://codelala.github.io/gdi-intro-html-css'>link</a>).
 
 ---
 
