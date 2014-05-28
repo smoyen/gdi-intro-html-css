@@ -50,35 +50,35 @@ a:hover{
   color: #a03535;
 }
 #main .content-img{
-  /*float: left;*/
-  /*width: 180px;*/
+  float: left;
+  width: 180px;
   margin-right: 15px;
   border: 1px solid #222;
   padding: 3px;
 }
 #main .spotlight{
-  /*padding: 10px;*/
-  /*border: 1px solid #222;*/
-  /*position:relative;*/
-  /*background-color: #c67574;*/
-  /*margin-bottom: 20px; */ 
+  padding: 10px;
+  border: 1px solid #222;
+  position:relative;
+  background-color: #c67574;
+  margin-bottom: 20px;  
 }
 #main .spotlight span{
-  /*background: #000;*/
-  /*color:#fff;*/
-  /*font-size: 1.6em;*/
-  /*padding: 10px;*/
-  /*position: absolute;*/
-  /*bottom:20px;*/
-  /*left:0;*/
-  /*opacity: .8;*/
+  background: #000;
+  color:#fff;
+  font-size: 1.6em;
+  padding: 10px;
+  position: absolute;
+  bottom:20px;
+  left:0;
+  opacity: .8;
 }
 #sidebar ul{
   margin-bottom: 30px;
 }
 #sidebar ul#gallery li{
-  /*float: left;
-  width: 60px;*/
+  float: left;
+  width: 60px;
 }
 #sidebar ul#gallery li img{
   border: 1px solid #222;
@@ -98,19 +98,19 @@ a:hover{
   height: 180px
 }
 #main{
-  /*width: 660px;*/
-  /*float: right;*/
-  /*padding: 20px;*/
+  width: 660px;
+  float: right;
+  padding: 20px;
 }
 #sidebar{
-  /*float: left;*/
-  /*width:239px;*/
-  /*padding: 10px;*/
-  /*border-right: 1px solid #ddd;*/
-  /*min-height: 1200px;*/
+  float: left;
+  width:239px;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  min-height: 1200px;
 }
 #footer{
-  /*clear: both;*/ /* reposition the footer thus resetting the container box*/
+  clear: both; /* reposition the footer thus resetting the container box*/
   text-align: center;
   padding: 10px 0;
   color: #fff;
