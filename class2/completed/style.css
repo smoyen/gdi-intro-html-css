@@ -1,0 +1,36 @@
+/* This is a comment. It will not affect your css */
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-size: 62.5%; /* Set default font-size to approx. 10px for use with ems/percentage */
+  color: #222222; /* Shorthand notation for this would be 'color: #222' */
+  font-family: Arial, sans-serif;
+  background-color: #efefef;
+}
+h1{
+  font-size: 4em; 
+  text-align: center;
+}
+h2{
+  font-size:2.1em;
+  color: #a03535;
+}
+h3{
+  font-size: 1.6em;
+  color: #a03535;
+}
+p, ul{
+  font-size:1.5em;
+}
+p{
+  font-size: 1.5em; /* 15px */
+}
+p#contact a{
+  color: #CC0000;
+}
+a{
+  color: #c67574;
+  /* This rule does not change the email link color due to specificity rules */
+}

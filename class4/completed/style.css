@@ -1,0 +1,129 @@
+*{
+  /*simple reset*/
+  margin:0;
+  padding:0;
+}
+body{
+  font-size: 62.5%; /* Set default font-size to approx. 10px for use with ems */
+  color: #222; /* Short hand for #222222. Can use this for hex values that contain the same letters or numbers */
+  font-family: Arial, sans-serif;
+  background-color: #efefef;
+}
+
+/* Content styles */
+h1{
+  font-size: 4em;
+  text-align: center;
+  padding-top: 60px;  /* set main header to a font size of 24px */
+}
+h2{
+  font-size:2.1em;
+  padding-bottom: 15px;
+  color: #a03535;
+}
+h3{
+  font-size: 1.6em;
+  color: #a03535;
+  padding-bottom: 15px;
+}
+p, ul{
+  font-size:1.5em;
+}
+p{
+  padding-bottom: 15px;
+  line-height: 1.6em;
+}
+p span{
+  color: #30c1b0;
+}
+ul{
+  list-style: none;
+}
+ul li{
+  padding-right: 18px;
+  padding-bottom: 10px;
+}
+a{
+  text-decoration: none;
+  color: #c67574;
+}
+a:hover{
+  color: #a03535;
+}
+#main .content-img{
+  float: left;
+  width: 180px;
+  margin-right: 15px;
+  border: 1px solid #222;
+  padding: 3px;
+}
+#main .spotlight{
+  padding: 10px;
+  border: 1px solid #222;
+  position:relative;
+  background-color: #c67574;
+  margin-bottom: 20px;  
+}
+#main .spotlight span{
+  background: #000;
+  color:#fff;
+  font-size: 1.6em;
+  padding: 10px;
+  position: absolute;
+  bottom:20px;
+  left:0;
+  opacity: .8;
+}
+#sidebar ul{
+  margin-bottom: 30px;
+}
+#sidebar ul#gallery li{
+  float: left;
+  width: 65px;
+}
+#sidebar ul#gallery li img{
+  border: 1px solid #222;
+}
+
+/* Layout styles */
+#container{
+  width: 960px; /* 960px + 2px to account for debugging border*/
+  margin: 0 auto;
+  background-color: #fff;
+}
+#header{
+  padding: 20px 10px;
+  color: #fff;
+  background-image: url('images/header-bg.jpg');
+  background-size: cover;
+  height: 180px
+}
+#main{
+  width: 660px;
+  float: right;
+  padding: 20px;
+}
+#sidebar{
+  float: left;
+  width:239px;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  min-height: 1200px;
+}
+#footer{
+  clear: both; /* reposition the footer thus resetting the container box*/
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 1.2em;
+  background-color: #999;
+}
+
+
+
+/* Debug styles */
+/*#container{border: 1px solid red;}
+#header{background-color: #ddd;}
+#main{background-color: #ffe8e8;}
+#sidebar{background-color: #dfc7ed;}
+#footer{background-color: #555;}*/
