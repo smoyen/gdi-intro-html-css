@@ -62,11 +62,11 @@
           <h3>Inline vs Block</h3>
           <div class = "left" style="width: 50%; text-align: left;">
             <div class = "fragment">
-              <p><span class="green">"Block"</span> level elements are formated with a line break so they appear on the next line</p>
+              <p><span class="green">"Block"</span> level elements are formated with a line break. After block elements, browsers render a new line. <span class="blue">e.g. &lt;div>, &lt;p>, &lt;li>, and everything else</span></p>
             </div>
             <br/>
             <div class = "fragment">
-              <p><span class="green">"Inline"</span> elements appear on the same line that they are written on without any line break, <span class="blue">e.g. &lt;a>, &lt;img/>, &lt;em>, &lt;span>, &lt;strong></span></p>
+              <p>After <span class="green">"inline"</span> elements, a new line is not rendered and content stays on the same line. <span class="blue">e.g. &lt;a>, &lt;img/>, &lt;span>, &lt;br/></span></p>
             </div>
           </div>
           <div class="right fragment">
@@ -74,7 +74,7 @@
           </div>
         </section>
         <!-- Inline v block again-->
-        <section>
+        <!--section>
           <h3>Recap: Block &amp; Inline Elements</h3>
           <ul>
             <li>After inline elements, a new line is not rendered and content stays on the same line.</li>
@@ -82,7 +82,7 @@
             <li>After block elements, browsers render a new line.</li>
             <li><span class="blue">e.g. &lt;p>, &lt;li>, &lt;h1>, and almost everything else</span></li>
           </ul>
-        </section>
+        </section-->
         <section> 
           <h3>Element: Div</h3>
           <ul>
@@ -118,7 +118,7 @@
           <ul>
               <li>Organize page content by dividing it into sections using divs</li>
               <li>Give your divs id names that indicate what kind of content is inside (<span class="blue">e.g. id="header", id="main", id="footer", etc</span>)</li>
-              <li>Place a comment after the closing div of each section for reference</li>
+              <li>Optional: Place a comment after the closing div of each section for reference/debugging</li>
           </ul>
         </section>
         <!-- What is CSS-->
@@ -273,7 +273,22 @@
         <br/>
         <p>The property is the style type that will be applied to the selector.</p>
       </section>
-        
+        <!-- Properties-->
+        <section>
+          <h3>CSS Properties</h3>
+          <p>Many CSS properties have self-explanatory names:</p>
+          <ul>
+            <li>background-color</li>
+            <li>font-family</li>
+            <li>font-size</li>
+            <li>color</li>
+            <li>width</li>
+            <li>height</li>
+          </ul>
+          <br/>
+          <br/>
+          <p>Comprehensive list of all CSS properties:<br/><a style="font-size:.9em" href = "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</a></p>
+        </section>
         <!-- Color-->
         <section>
           <h3>Property: Color</h3>
@@ -425,11 +440,10 @@
             <li>Create a new .css file</li>
             <li>Add a link to the file in the head of your html file</li>
 <pre><code class = "html">
-&lt;link rel="stylesheet" type="text/css" href="stylesheets/styles.css"/>
+&lt;link rel="stylesheet" href="stylesheets/styles.css"/>
 </code></pre>
-            <li>Add styles to change the colors, background colors or fonts of different parts of your website</li>
-            <li>Try using ids and classes to change specific elements</li>
-            <li>Center the level 2 headlines for each section of your site</li>
+            <li>Add baseline reset styles using the <span class="blue">*</span> selector</li>
+            <li>Use the "Sources" tab in the dev tools inspector to double check your CSS is linked correctly. <small>Shortcut: <em>opt + comm + i</em></small></li>
           </ul>
   
         </section>
@@ -463,11 +477,11 @@
           <h3>Specificity</h3>
           <p>If two styles end up fighting over the same element there are "preference rules" the CSS will follow to decide who wins.</p>
           <pre><code class = "html">
-          p a{
-            color:blue;
-          }
           a#special{
             colore: red;
+          }
+          p a{
+            color:blue;
           }
           </code></pre>
           <br/>
@@ -518,7 +532,16 @@
             }
           </code></pre>
         </section>
-        
+                <!-- Exercise-->
+        <section class="hide-pdf">
+          <h3>Let's develop it!</h3>
+          <ul>
+            <li>Add styles to change the background color of the header, footer, and level 2 headers. Use ids and classes to change specific elements</li>
+            <li>Add styles to change the font color, size, weight, and line-height of elements on the page</li>
+            <li>Center the level 2 headlines for each section of your site using the CSS Rule <span class="blue">text-align: center</span></li>
+          </ul>
+  
+        </section>
         <!-- Question -->
         <section>
           <h2>Questions?</h2>
