@@ -5,14 +5,13 @@
   list-style: none;
   text-decoration: none;
 }
-/* General Styles 
+/* General Styles */
 body {
   background-color: rgb(241, 241, 241);
   font-size: 16px;
   font-weight: 300;
   font-family: Arial;
   line-height: 1.2em;
-
 }
 
 a {
@@ -45,23 +44,38 @@ h4 {
 
 p{
   font-size: 1.2em;
-}*/
+}
 
-/* Header 
+/* Header */
 #header {
   background-color: #009D92;
 }
 #header h1 {
   color: #FFEECC;
-}*/
+}
 
-/* Footer 
+/* Footer */
 #footer {
   background-color: #00665F;
 }
+
 #footer a {
   color: #68A392;
-}*/
-/*#footer a:hover {
+}
+
+#footer a:hover {
   color: #efefef;
-}*/
+}
+
+/* Formatting I put in place to get your attention. You can 
+remove this when you add your picture to the site */
+.important {
+  color: black;
+  background-color: yellow;
+  font-size: 30px;
+  height: 50px;
+}
+
+.important p {
+  padding-top: 15px;
+}
