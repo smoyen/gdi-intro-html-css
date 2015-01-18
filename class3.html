@@ -57,61 +57,13 @@
         		<img src="images/session2site.png">
         	</div>
         </section-->
-        
-        <!-- Inline vs. block-->
-        <section>
-          <h3>Inline vs Block</h3>
-          <div class = "left" style="width: 50%; text-align: left;">
-            <div class = "fragment">
-              <p>So far, we have mostly seen <span class="green">"block"</span> elements</p>
-              <p>They appear on the next line, like paragraphs</p>
-            </div> 
-            <br/><br/>
-            <div class = "fragment">
-              <p>There are also <span class="green">"inline"</span> elements</p>
-              <p>They appear on the same line that they are written on.</p>
-            </div>
-          </div>
-          <div class="right fragment">
-          	<img src="images/example-blockinline.png" alt="example of inline and block elements" />
-          </div>
-        </section>
-        <!-- Inline v block again-->
-        <section>
-          <h3>Block &amp; Inline Elements</h3>
-          <ul>
-            <li>CSS divides HTML into two types: inline and block.</li>
-            <li>After block elements, browsers render a new line.</li>
-            <li>Inline elements: img, a, br, em, strong</li>
-            <li>Block elements: p, h1, ul, li, almost everything else</li>
-          </ul>
-        </section>
-        <section> 
-        	<h3>Element: Div</h3>
-        		<ul>
-	        		<li>Block level element. Each new div is rendered on a new line.</li>
-	        		<li>A <span class="green" style="font-style: italics;">div</span>ision, or section of content within an HTML page.</li>
-	        		<li>Used to group elements to format them with CSS.</li>
-	        		<li>Apply IDs and Classes to divs to control their styles with CSS.</li>
-        		</ul>
-<pre><code>&lt;div>
-   &lt;p>Content&lt;p>
-   &lt;p>Content&lt;p>
-&lt;/div></code></pre>
-<pre><code>&lt;div id="header">
-   &lt;h1>Main Heading&lt;h1>
-&lt;/div></code></pre>
-<pre><code>&lt;div class="sub-content">
-   &lt;p>Some more content&lt;p>
-&lt;/div></code></pre>
-        </section>
   <!-- Div continued-->
         <section>
           <h3>Grouping elements with div</h3>
           <div class = "left-align">
           <ul>
-          <li>The div tag is used everywhere to group elements together into sections.</li>
-          <li>For example, what if we want the first 2 paragraphs of a section to be right-aligned, purple &amp; bold, but we don't want any other paragraphs to be right-aligned?</li>
+          <li>Group elements that we would like formatted in a simialar way.</li>
+          <li><u>Example:</u> <p>What if we want the first 2 paragraphs of a section to be right-aligned, purple &amp; bold, but we don't want any other paragraphs to be right-aligned?</p></li>
           <li>We would wrap them in a div element to style them differently.</li>
           </ul>
            </div>
@@ -150,9 +102,9 @@
          <p class="left-align">Let's create a site using divs to separate content into different sections on our page.</p>
          <p>
           <ul>
-            <li>Create a header nav, content sections (Famous Women, Organizations, Fun Facts), and a footer nav.</li>
-            <li>Add ID's to each content section with descriptive names (eg. <code>class="nav", id="famous", id="organizations, id="facts")</code>.</li>
-            <li>Add divs to separate each Women in Computing profile and give it a descriptive name (eg. <code>class="woman"</code>).</li>
+            <li>Wrap the unordered list of content sections (Famous Women, Organizations, Fun Facts) in a div element, with <code>class="nav"</code>. Do this in the Header and the Footer</li>
+            <br/>
+            <li>Wrap each woman's profile (name, lifespan, image, and bio) and give it a descriptive name (eg. <code>class="woman"</code>).</li>
           </ul>
         </p> 
         </section> 
@@ -184,11 +136,12 @@
          <section>
           <h3>Let's Develop It</h3>
           <ul>
-            <li>Let's add some spans to our content to help highlight some text.</li>
-            <li>Add a span to the footer to create a copyright.</li>
-            <li>Target the span and change the color of the text.</li>
+            <li>Let's add a span to our footer that wraps around all of the text outside the nav div.</li>
+            <li>Add a copyright symbol and year inside the span.</li>
+            <li>Target the span (with css) and change the color of the text.</li>
           </ul>
-        </section>      
+          <img src="images/newFooter.PNG">
+        </section>
         <!-- Pseudo class-->
         <section>
           <h3>Pseudo-classes, more CSS for links</h3>
@@ -230,6 +183,10 @@ a:link
         <section>
           <h3>Let's Develop It</h3>
           <p>Add pseudo classes to your links</p>
+          <br/>
+          <ul>
+            <li>Make the hover pseudo class for links in the header and footer change the text color to #efefef</li>
+          </ul>
         </section>
         
         <!-- Box model-->
@@ -373,13 +330,13 @@ padding: 10px 5px 3px 5px;
 		<section>
 			<h3>Property: Width</h3>
 			<p>Sets the width of an element.</p>
-			<p>Does not include padding or borders, remember these add to the width.</p>
+			<p>Padding and border width adds to the the <i>overall width</i>, in addition to the width value specified.</p>
 		</section>
 		<!-- height-->
 		<section>
 			<h3>Property: Height</h3>
 			<p>Sets the height of an element.</p>
-			<p>Does not include padding or borders, remember these add to the width.</p>
+			<p>Padding and border height adds to the the <i>overall height</i>, in addition to the height value specified.</p>
 		</section>
 		<!-- Exercise -->
 		<section>
