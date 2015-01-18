@@ -12,6 +12,8 @@ body {
   font-weight: 300;
   font-family: Arial;
   line-height: 1.2em;
+  min-width: 960px;
+  width: 100%;
 }
 
 a {
@@ -30,11 +32,13 @@ h2 {
   font-weight: 400;
   line-height: 80px;
   text-align: center;
+  margin: 0 0 0.5em 0;
 }
 
 h3 {
   font-size: 1.4em;
   font-weight: 700;
+  margin: 0 0 0.3em 0;
 }
 
 h4 {
@@ -44,14 +48,63 @@ h4 {
 
 p{
   font-size: 1.2em;
+  margin: 1em;
 }
 
 /* Header */
 #header {
   background-color: #009D92;
+  padding-left: 10px;
 }
 #header h1 {
   color: #FFEECC;
+  padding-left: 40px;
+}
+#header a:hover {
+  color: #efefef;
+}
+
+/* Main Content */
+#famous div.woman {
+  background-color: white;
+  margin: 1%;
+  padding: 2%;
+  width: 27.33%;
+  min-height: 250px;
+}
+
+#famous div img {
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+}
+
+#organizations ul {
+  margin: 50px;
+}
+
+#organizations ul li {
+  font-size: 1.2em;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+  padding-left: 5px;
+  max-width: 50%;
+}
+
+#organizations img {
+  display:none;
+  max-width: 40%;
+}
+
+#facts ul {
+  margin: 50px;
+}
+
+#facts ul li {
+  font-size: 1.2em;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+  padding-left: 5px;
 }
 
 /* Footer */
@@ -63,19 +116,11 @@ p{
   color: #68A392;
 }
 
+#footer span {
+  color: #68A392;
+}
+
 #footer a:hover {
   color: #efefef;
 }
 
-/* Formatting I put in place to get your attention. You can 
-remove this when you add your picture to the site */
-.important {
-  color: black;
-  background-color: yellow;
-  font-size: 30px;
-  height: 50px;
-}
-
-.important p {
-  padding-top: 15px;
-}
