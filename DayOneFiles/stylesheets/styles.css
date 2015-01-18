@@ -23,6 +23,7 @@ a {
 h1 {
   font-size: 2.2em;
   line-height: 75px;
+  float: left;
 }
 
 h2 {
@@ -56,10 +57,38 @@ p{
   background-color: #009D92;
   padding-left: 10px;
 }
+
+.clearfix:after {
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  color: #fff;
+  margin: 0 10px;
+  padding: 5px 10px;
+}
+
+#header .nav {
+  float: right;
+  font-size: 1.2em;
+  margin-left: 20px;
+}
+
+#header .nav li {
+  line-height: 75px;
+}
+
 #header h1 {
   color: #FFEECC;
   padding-left: 40px;
 }
+
 #header a:hover {
   color: #efefef;
 }
@@ -71,6 +100,7 @@ p{
   padding: 2%;
   width: 27.33%;
   min-height: 250px;
+  float: left;
 }
 
 #famous div img {
@@ -79,8 +109,26 @@ p{
   width: 100%;
 }
 
+div.caption {
+  position: relative;
+}
+
+div.caption p{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0,0,0,.8);
+  margin: 0;
+}
+
+#organizations {
+  clear: both;
+}
+
 #organizations ul {
   margin: 50px;
+  position: relative;
 }
 
 #organizations ul li {
@@ -94,7 +142,15 @@ p{
 #organizations img {
   display:none;
   max-width: 40%;
+  position: absolute;
+  top: 0;
+  right: 20px;
 }
+
+#organizations li:hover img {
+  display: block;
+}
+
 
 #facts ul {
   margin: 50px;
@@ -118,9 +174,17 @@ p{
 
 #footer span {
   color: #68A392;
+  float: right;
+  margin: 10px;
 }
 
 #footer a:hover {
   color: #efefef;
+}
+
+#footer .nav {
+  float: left;
+  font-size: 1.1em;
+  margin: 10px;
 }
 
